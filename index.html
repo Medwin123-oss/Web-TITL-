@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projek.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="gambar/logosmk-removebg-preview.png" alt="Logo SMKN2YK">
+            <span>SMKN 2 YOGYAKARTA</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#beranda" class="nav-link">Beranda</a>
+            <a href="#profil" class="nav-link">Profil Jurusan</a>
+            <a href="#album" class="nav-link">Album</a>
+            <a href="#prestasi" class="nav-link">Prestasi</a>
+            <a href="#buku-tamu" class="nav-link">Buku Tamu</a>
+        </div>
+    </nav>
+    <section id="beranda" data-aos="fade-up">
+        <h1>Selamat Datang di Jurusan TITL - SMKN 2 Yogyakarta</h1>
+        <p>Jurusan Teknik Instalasi Tenaga Listrik (TITL) di SMKN 2 Yogyakarta adalah tempat di mana siswa dilatih untuk menjadi 
+            tenaga ahli kelistrikan yang profesional dan berkarakter. Kurikulum kami berorientasi 
+            pada industri dengan pendekatan pembelajaran praktik langsung, teaching factory, dan kerja sama dengan DUDI.</p>
+        <p>Kami berkomitmen memberikan pendidikan terbaik dengan metode berbasis proyek dan pembelajaran teknologi terkini, seperti instalasi motor listrik, panel surya, dan sistem kontrol otomatis. 
+            Siswa tidak hanya dibekali teori, tetapi juga pengalaman langsung melalui praktik lapangan, magang industri, 
+            dan lomba-lomba kompetensi keahlian tingkat nasional.</p>
+    </section>
+    <section id="profil" data-aos="fade-up">
+        <h2>Profil Jurusan</h2>
+        <p>Teknik Instalasi Tenaga Listrik (TITL) merupakan salah satu kompetensi keahlian di bidang teknik listrik 
+            yang mempelajari instalasi sistem kelistrikan pada bangunan gedung, rumah tinggal, industri, serta sistem kontrol dan otomasi.
+             Lulusan TITL memiliki kompetensi dalam instalasi motor listrik.</p>
+    <p>Jurusan ini telah terakreditasi A (96) dan menjalin kerja sama dengan berbagai perusahaan seperti PLN, Telkom,
+         dan perusahaan teknologi otomasi. Fasilitas yang tersedia meliputi ruang praktik berstandar industri, perangkat simulasi, 
+             serta laboratorium tenaga listrik dan smart grid.</p>
+    </section>
+    <section id="album" data-aos="fade-up">
+        <h2>album</h2>
+        <ul class="accordion">
+            <li>
+                <img src="gambar/WhatsApp Image 2025-04-11 at 12.46.08.jpeg"/>
+                <div class="content">
+                    <span>
+                        <h2>Lantai 1</h2>
+                        <p>Ini adalah lantai 1 di gedung TITL</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="gambar/WhatsApp Image 2025-04-26 at 04.33.52 (1).jpeg"/>
+                <div class="content">
+                    <span>
+                        <h2>Lantai 2</h2>
+                        <p>Ini adalah lantai 2 di gedung TITL</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="gambar/WhatsApp Image 2025-04-26 at 05.05.30.jpeg"/>
+                <div class="content">
+                    <span>
+                        <h2>Lab Komputer</h2>
+                        <p>Ini adalah Lab Komputer di TITL</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="gambar/WhatsApp Image 2025-04-26 at 04.34.16 (2).jpeg"/>
+                <div class="content">
+                    <span>
+                        <h2>Gedung TITL</h2>
+                        <p>Ini adalah gedung TITL</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="gambar/WhatsApp Image 2025-04-26 at 04.34.16.jpeg"/>
+                <div class="content">
+                    <span>
+                        <h2>Kegiatan Jurusan 1</h2>
+                        <p>Ini adalah Kegiatan Jurusan 1</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="gambar/WhatsApp Image 2025-04-26 at 04.34.16 (1).jpeg"/>
+                <div class="content">
+                    <h2>Kegiatan Jurusan 2</h2>
+                    <p>Ini adalah kegiatan Jurusan 2</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="prestasi" data-aos="fade-up">
+        <h2>Prestasi</h2>
+        <ol>
+            <li>
+                <b>Prestasi Tingkat Nasional</b>
+            </li>
+            <ul>
+                <li>Juara 2 Nasional bidang Refrigeration 2015.</li>
+            </ul>
+            <li>
+                <b>Prestasi Tingkat Provinsi (DIY)</b>
+            </li>
+            <ul>
+              <li>Juara 1 bidang Komersial Wiring dan Refrigeration 2014.</li>
+              <li>Juara 1 bidang Refrigeration 2015.</li>
+              <li>Juara 1 bidang Ekonomi Kreatif: melilit ulang motor pompa air.</li>
+            </ul>
+          </ol>
+    </section>
+    <section id="buku-tamu" data-aos="fade-up">
+        <h2 style="text-align: center;">Buku Tamu</h2>
+        <form onsubmit="return submitGuestbook(event)" class="guestbook-form">
+            <input type="text" id="nama" placeholder="Nama" required>
+            <input type="email" id="email" placeholder="Gmail (opsional)">
+            <input type="tel" id="telepon" placeholder="Nomor Telepon (opsional)">
+            <textarea id="pesan" rows="4" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+        <div id="daftar-pesan" class="daftar-pesan"></div>
+      </section>
+        <footer>
+          <div class="footer-container">
+            <div class="social-media">
+              <h3>SMKN 2 Yogyakarta</h3>
+              <p>Jl. AM. Sangaji 47 Yogyakarta Cokrodiningratan, Jetis, Yogyakarta</p>
+              <p>(0274) 513490 / (0274) 512639</p>
+              <p>info@smk2-yk.sch.id</p>
+              
+              <h3>Media Sosial</h3>
+              <ul>
+                <li><a href="https://facebook.com/smkn2yogyakarta">Facebook</a></li>
+                <li><a href="https://www.youtube.com/@SMKN2Yogyakarta">Youtube</a></li>
+                <li><a href="https://instagram.com/smkn2yogyakarta">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@smk2yogyakarta">Tiktok</a></li>
+                <li><a href="https://twitter.com/smkn2yogyakarta">Twitter</a></li>
+              </ul>
+            </div>
+        
+            <div class="map">
+              <h3>Lokasi</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15812.480970300734!2d110.36737!3d-7.777073000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58373fffffff%3A0xa4ec1ca156555926!2sSMK%20Negeri%202%20Yogyakarta!5e0!3m2!1sen!2sid!4v1745362124899!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        
+          <div class="footer-marquee">
+            <div class="marquee-content">
+            <p>&copy; 2025 SMKN 2 Yogyakarta | Dikembangkan Oleh Medwin DP/20/X SIJA 1</p>
+          </div>
+          </div>
+        </footer>
+        <script>
+            function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+    function submitGuestbook(event) {
+      event.preventDefault();
+      const nama = document.getElementById("nama").value;
+      const email = document.getElementById("email").value;
+      const telepon = document.getElementById("telepon").value;
+      const pesan = document.getElementById("pesan").value;
+      const daftarPesan = document.getElementById("daftar-pesan");
+      const div = document.createElement("div");
+      let pesanContent = `<p><strong>${nama}</strong>: ${pesan}</p>`;
+      if (email) pesanContent += `<p><strong>Email:</strong> ${email}</p>`;
+      if (telepon) pesanContent += `<p><strong>Telepon:</strong> ${telepon}</p>`;
+      div.innerHTML = pesanContent;
+      daftarPesan.prepend(div);
+      document.getElementById("nama").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("telepon").value = "";
+      document.getElementById("pesan").value = "";
+      return false;
+    }
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      document.querySelectorAll('section').forEach(section => {
+        const sectionTop = section.offsetTop - 130;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+        </script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
